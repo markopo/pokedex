@@ -58,11 +58,12 @@
                                     <constraint firstItem="qrw-5N-Oaj" firstAttribute="top" secondItem="AVR-W8-KCd" secondAttribute="top" constant="6" id="sxv-As-hRa"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="prominent" translatesAutoresizingMaskIntoConstraints="NO" id="7Xu-hW-JdB">
+                            <searchBar contentMode="redraw" searchBarStyle="prominent" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="7Xu-hW-JdB">
                                 <rect key="frame" x="0.0" y="65" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="iJ4-TX-5un"/>
                                 </constraints>
+                                <color key="barTintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="wT5-ki-MGM">
@@ -139,6 +140,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="NEW-Lf-5j0" id="vSt-0N-OrD"/>
+                        <outlet property="searchBar" destination="7Xu-hW-JdB" id="jS2-q2-7JB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
