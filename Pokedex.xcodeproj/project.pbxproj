@@ -19,6 +19,7 @@
 		0BA0629E1F8A96F70086C0F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA0629C1F8A96F70086C0F1 /* Main.storyboard */; };
 		0BA062A01F8A96F70086C0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BA0629F1F8A96F70086C0F1 /* Assets.xcassets */; };
 		0BA062A31F8A96F70086C0F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BA062A11F8A96F70086C0F1 /* LaunchScreen.storyboard */; };
+		0BE33F5220245E0600F00B47 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE33F5120245E0600F00B47 /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0BA0629F1F8A96F70086C0F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BA062A21F8A96F70086C0F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BA062A41F8A96F70086C0F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE33F5120245E0600F00B47 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				0BA0629A1F8A96F70086C0F1 /* ViewController.swift */,
+				0BE33F5120245E0600F00B47 /* PokemonDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				0B23831E2020966800205570 /* PokeCell.swift in Sources */,
 				0BA0629B1F8A96F70086C0F1 /* ViewController.swift in Sources */,
 				0BA062991F8A96F70086C0F1 /* AppDelegate.swift in Sources */,
+				0BE33F5220245E0600F00B47 /* PokemonDetailVC.swift in Sources */,
 				0B23831B2020757900205570 /* Pokemon.swift in Sources */,
 				0B2383202020B91C00205570 /* csv.swift in Sources */,
 			);

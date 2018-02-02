@@ -12,6 +12,9 @@
         <array key="AppleSDGothicNeo.ttc">
             <string>AppleSDGothicNeo-Regular</string>
         </array>
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
         <array key="pokemon.ttf">
             <string>PokemonSolidNormal</string>
         </array>
@@ -141,12 +144,43 @@
                     <connections>
                         <outlet property="collectionView" destination="NEW-Lf-5j0" id="vSt-0N-OrD"/>
                         <outlet property="searchBar" destination="7Xu-hW-JdB" id="jS2-q2-7JB"/>
+                        <segue destination="kSp-66-CFV" kind="show" identifier="PokemonDetailVC" id="pu4-rd-A17"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="7mi-UU-gbN" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="jJf-Jm-whJ">
+            <objects>
+                <viewController id="kSp-66-CFV" customClass="PokemonDetailVC" customModule="Pokedex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aRn-Ho-QW1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0DP-OD-UoE">
+                                <rect key="frame" x="153.5" y="314.5" width="68" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="28"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0DP-OD-UoE" firstAttribute="centerY" secondItem="aRn-Ho-QW1" secondAttribute="centerY" id="MEz-5U-XXU"/>
+                            <constraint firstItem="0DP-OD-UoE" firstAttribute="centerX" secondItem="aRn-Ho-QW1" secondAttribute="centerX" id="cDe-a8-4dv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JJW-YQ-2ET"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameLbl" destination="0DP-OD-UoE" id="VkD-LW-jau"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdS-R0-ggS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="133"/>
         </scene>
     </scenes>
     <resources>
