@@ -13,6 +13,9 @@ class PokemonDetailVC: UIViewController {
     var pokemon:Pokemon! 
     
     @IBOutlet weak var nameLbl: UILabel!
+    @IBAction func backBtn(_ sender: UIButton) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
