@@ -49,7 +49,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             musicPlayer.play()
         }
         catch let err as NSError {
-            print(err.debugDescription)
+            print("SOUND ERROR: " + err.description + " " + err.debugDescription)
         }
         
     }
