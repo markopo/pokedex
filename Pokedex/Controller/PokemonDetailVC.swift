@@ -35,8 +35,29 @@ class PokemonDetailVC: UIViewController {
         super.viewDidLoad()
 
         nameLbl.text = pokemon.name
+        pokeDexidLbl.text = "\(pokemon.pokedexId)"
+        
+        pokemon.downloadPokemonDetail {
+            self.updateUI()
+        }
+        
         
         // Do any additional setup after loading the view.
+    }
+    
+    func updateUI() {
+       
+        if !pokemon.weight.isEmpty {
+            self.weightLbl.text = pokemon.weight
+        }
+        
+        if !pokemon.height.isEmpty {
+            self.heightLbl.text = pokemon.height
+        }
+        
+       self.baseAttackLbl.text = pokemon.attack
+       self.defenseLbl.text = pokemon.defense
+
     }
 
     override func didReceiveMemoryWarning() {
