@@ -37,6 +37,10 @@ class PokemonDetailVC: UIViewController {
         nameLbl.text = pokemon.name
         pokeDexidLbl.text = "\(pokemon.pokedexId)"
         
+        let img = UIImage(named: "\(pokemon.pokedexId)")
+        mainImg.image = img
+        currentEvoImg.image = img
+        
         pokemon.downloadPokemonDetail {
             self.updateUI()
         }
