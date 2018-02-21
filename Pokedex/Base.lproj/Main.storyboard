@@ -206,6 +206,9 @@
                                                     <segment title="Moves"/>
                                                 </segments>
                                                 <color key="tintColor" red="0.92347753050000003" green="0.37049731609999997" blue="0.25495776530000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <connections>
+                                                    <action selector="segmentChanged:" destination="kSp-66-CFV" eventType="valueChanged" id="9go-Hk-4mo"/>
+                                                </connections>
                                             </segmentedControl>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FgA-rH-bQT">
                                                 <rect key="frame" x="0.0" y="38" width="351" height="155.5"/>
@@ -321,13 +324,13 @@
                                                         <rect key="frame" x="0.0" y="19" width="166.5" height="19"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pc-UN-WJY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="47.5" height="19"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="47" height="19"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OB4-S2-dfz">
-                                                                <rect key="frame" x="63.5" y="0.0" width="103" height="19"/>
+                                                                <rect key="frame" x="63" y="0.0" width="103.5" height="19"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>

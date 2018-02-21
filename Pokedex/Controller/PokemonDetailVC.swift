@@ -26,6 +26,19 @@ class PokemonDetailVC: UIViewController {
     @IBOutlet weak var currentEvoImg: UIImageView!
     @IBOutlet weak var nextEvoImg: UIImageView!
     
+    @IBAction func segmentChanged(_ sender: UISegmentedControl) {
+        
+        let chosenIndex =  sender.selectedSegmentIndex
+        
+        if chosenIndex == 0 {
+            descriptionLbl.isHidden = false
+        }
+        else {
+            descriptionLbl.isHidden = true
+        }
+        
+        
+    }
     
     @IBAction func backBtn(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
